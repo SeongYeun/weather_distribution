@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a0504212b76c73d6b5c3bbd0c6189e0d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a0504212b76c73d6b5c3bbd0c6189e0d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a0504212b76c73d6b5c3bbd0c6189e0d = L.map(
+                "map_a0504212b76c73d6b5c3bbd0c6189e0d",
+                {
+                    center: [36.35131, 127.948425],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_01de6b2dd35a6d4f43f71d8b1dc2eb9d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_01de6b2dd35a6d4f43f71d8b1dc2eb9d.addTo(map_a0504212b76c73d6b5c3bbd0c6189e0d);
+        
+    
+            var marker_9700e42a6c00835009dc61de4b33695c = L.marker(
+                [37.546966, 126.97826],
+                {
+}
+            ).addTo(map_a0504212b76c73d6b5c3bbd0c6189e0d);
+        
+    
+            var icon_24231ce3b82a0b2de1baaae22bbc6a7a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9700e42a6c00835009dc61de4b33695c.setIcon(icon_24231ce3b82a0b2de1baaae22bbc6a7a);
+        
+    
+        var popup_170b70dc915eeba413a24e022a81e91f = L.popup({
+  "maxWidth": 200,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_d0aa466d997b2318e22d854d71625b10 = $(`<div id="html_d0aa466d997b2318e22d854d71625b10" style="width: 100.0%; height: 100.0%;">     <b>도시:</b> 서울</br>     <b>온도:</b> -0.61 ℃</br>     <b>날씨:</b> 약간의 구름이 낀 하늘     </div>`)[0];
+                popup_170b70dc915eeba413a24e022a81e91f.setContent(html_d0aa466d997b2318e22d854d71625b10);
+            
+        
+
+        marker_9700e42a6c00835009dc61de4b33695c.bindPopup(popup_170b70dc915eeba413a24e022a81e91f)
+        ;
+
+        
+    
+    
+            var marker_469e16609b437227408df9ed582437ce = L.marker(
+                [35.190576, 128.930982],
+                {
+}
+            ).addTo(map_a0504212b76c73d6b5c3bbd0c6189e0d);
+        
+    
+            var icon_91b1e562cb28eb4a8c92015b134ecd6d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_469e16609b437227408df9ed582437ce.setIcon(icon_91b1e562cb28eb4a8c92015b134ecd6d);
+        
+    
+        var popup_9a02715adaaaefe232a22ae6d43031e1 = L.popup({
+  "maxWidth": 200,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_49af1557100eced2fa8a1c385222a639 = $(`<div id="html_49af1557100eced2fa8a1c385222a639" style="width: 100.0%; height: 100.0%;">     <b>도시:</b> 부산</br>     <b>온도:</b> 3.01 ℃</br>     <b>날씨:</b> 맑음     </div>`)[0];
+                popup_9a02715adaaaefe232a22ae6d43031e1.setContent(html_49af1557100eced2fa8a1c385222a639);
+            
+        
+
+        marker_469e16609b437227408df9ed582437ce.bindPopup(popup_9a02715adaaaefe232a22ae6d43031e1)
+        ;
+
+        
+    
+    
+            var marker_e6ef33219ce76d376787e6108e1861a1 = L.marker(
+                [36.350955, 127.38264],
+                {
+}
+            ).addTo(map_a0504212b76c73d6b5c3bbd0c6189e0d);
+        
+    
+            var icon_e089e0fff945e406fee55f7a2cf1b9c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e6ef33219ce76d376787e6108e1861a1.setIcon(icon_e089e0fff945e406fee55f7a2cf1b9c0);
+        
+    
+        var popup_3808111b812ba9b88eeaade534921b9a = L.popup({
+  "maxWidth": 200,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_cdeef1abb846e68925f4c50f063026e2 = $(`<div id="html_cdeef1abb846e68925f4c50f063026e2" style="width: 100.0%; height: 100.0%;">     <b>도시:</b> 대전</br>     <b>온도:</b> -0.32 ℃</br>     <b>날씨:</b> 튼구름     </div>`)[0];
+                popup_3808111b812ba9b88eeaade534921b9a.setContent(html_cdeef1abb846e68925f4c50f063026e2);
+            
+        
+
+        marker_e6ef33219ce76d376787e6108e1861a1.bindPopup(popup_3808111b812ba9b88eeaade534921b9a)
+        ;
+
+        
+    
+    
+            var marker_6531f9a690ee81baea6f88c26db4de10 = L.marker(
+                [35.84621, 128.564583],
+                {
+}
+            ).addTo(map_a0504212b76c73d6b5c3bbd0c6189e0d);
+        
+    
+            var icon_f28c80f2eb89e520f707298e9a3f6db8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6531f9a690ee81baea6f88c26db4de10.setIcon(icon_f28c80f2eb89e520f707298e9a3f6db8);
+        
+    
+        var popup_7afa522b15fc3d84e2398b5326dde0e8 = L.popup({
+  "maxWidth": 200,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_69ee8ae13fb1166adb95cc59cd1e577c = $(`<div id="html_69ee8ae13fb1166adb95cc59cd1e577c" style="width: 100.0%; height: 100.0%;">     <b>도시:</b> 대구</br>     <b>온도:</b> 3.81 ℃</br>     <b>날씨:</b> 맑음     </div>`)[0];
+                popup_7afa522b15fc3d84e2398b5326dde0e8.setContent(html_69ee8ae13fb1166adb95cc59cd1e577c);
+            
+        
+
+        marker_6531f9a690ee81baea6f88c26db4de10.bindPopup(popup_7afa522b15fc3d84e2398b5326dde0e8)
+        ;
+
+        
+    
+</script>
+</html>
